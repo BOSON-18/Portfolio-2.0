@@ -1,0 +1,18 @@
+@import'tailwindcss/base';
+@import'tailwindcss/utilities';
+@import'tailwindcss/components';
+
+/* App.css */
+
+/* Hide the default scrollbar */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    /* Firefox */
+    overflow: -moz-scrollbars-none;
+    /* IE and Edge */
+    -ms-overflow-style: none;
+  }
+  
