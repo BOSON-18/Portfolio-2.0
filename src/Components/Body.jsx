@@ -4,10 +4,18 @@ import profile from "../assets/profilePic.jpg";
 import { SlSocialInstagram } from "react-icons/sl";
 import Cards from "./Projects/Cards";
 import TechCards from "./TechStack/Cards";
+import ContactUs from "./Form/ContactUs";
+import AboutMe from "./AboutMe";
+import Education from "./Education";
+import resume from '../assets/Resume.pdf'
+import { GoDownload } from "react-icons/go";
 
 const Body = () => {
   return (
-    <div className="gap-y-8">
+    <div className="gap-y-8 overflow-hidden bg-[#14131A] scroll-smooth">
+
+      {/* Section 0 */}
+     
       {/* Section 1 */}
       <section>
         <div className="border-1 relative">
@@ -38,15 +46,22 @@ const Body = () => {
 
           {/* Follow me  */}
           <div>
+            <a href={resume} download >
             <button className="flex flex-row justify-around items-center gap-3 font-semibold bg-[#1c1b23] text-[#8b8a91] py-2 px-4 rounded-md text-xs">
+              Download Resume
               {" "}
               <span className="text-xl font-bold">
-                <SlSocialInstagram />
+                <GoDownload/>
               </span>
-              Follow me on Instagram
             </button>
+            </a>
           </div>
         </div>
+      </section>
+
+      <section>
+        <AboutMe/>
+        <Education/>
       </section>
 
       {/* Section2  */}
@@ -57,7 +72,7 @@ const Body = () => {
             <h1 className="text-2xl font-semibold">Projects</h1>
           </div>
           <div>
-            <Cards/>
+            <Cards />
           </div>
         </div>
       </section>
@@ -66,8 +81,13 @@ const Body = () => {
 
       <section className="mt-2 w-[90%] ml-5 p-5">
         <div>
-          <TechCards/>
+          <TechCards />
         </div>
+      </section>
+
+      {/* Form */}
+      <section>
+        <ContactUs />
       </section>
     </div>
   );

@@ -5,7 +5,8 @@ import { IoVideocamOutline } from "react-icons/io5";
 
 export const sideBarArray=[{
     icon:<FiHome className="text-3xl "/>,
-    label:"Home"
+    label:"Home",
+    link:'/'
 },{
     icon:<FaFire  className="text-3xl"/>,
     label:"Trending"
@@ -15,5 +16,6 @@ export const sideBarArray=[{
     label:"Snippet"
 },{
     icon:<IoVideocamOutline className="text-3xl"/>,
-    label:"Videos"
+    label:"Videos",
+    link:'https://www.instagram.com/clumsyshots_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=='
 }]
