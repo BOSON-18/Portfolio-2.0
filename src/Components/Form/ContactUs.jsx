@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useRef } from "react";
 import { useFormik } from "formik";
 import Cover from "../../assets/Contact.jpg";
 import Header from "../Header";
-import SideBar from "../SideBar";
-import Contact from '../../assets/Contactus.lottie'
+
+import Contact from "../../assets/Contactus.lottie";
 import { DotLottiePlayer } from "@dotlottie/react-player";
+import emailjs from "@emailjs/browser";
+import { service_ID, template_id, user_key } from "../../constants";
+
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ContactUs = () => {
+  const form = useRef();
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -16,7 +22,39 @@ const ContactUs = () => {
       message: "",
     },
     onSubmit: (values) => {
-      alert(JSON.stringify(values, null, 2));
+      // console.log("Sending ")
+      console.log(values);
+
+      emailjs.sendForm(service_ID, template_id, form.current, user_key).then(
+        (result) => {
+          //console.log(result.text);
+          toast.success("Mail Sent", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+          // console.log("success")
+        },
+        (error) => {
+          // console.log(error.text);
+          toast.error("Something Went Wrong !", {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "dark",
+          });
+        }
+      );
+
       formik.resetForm();
     },
   });
@@ -24,78 +62,84 @@ const ContactUs = () => {
   return (
     <div className=" flex flex-row ml-8   items-center justify-between  rounded-xl opacity-80  bg-[#1c1b23] p-10 mr-5 gap-x-11  ">
       <div>
-        <DotLottiePlayer src={Contact} loop autoplay className="w-[400px]"></DotLottiePlayer>
+        <DotLottiePlayer
+          src={Contact}
+          loop
+          autoplay
+          className="w-[400px]"
+        ></DotLottiePlayer>
       </div>
       <span className="flex flex-col">
-      <div>
-        <h1 className="text-4xl text-white font-semibold p-5 text-center">
-          DISCUSS A PROJECT OR JUST WANT TO SAY HI?
-          <br /> <span className="">MY INBOX IS OPEN FOR ALL..!</span>
-        </h1>
-      </div>
-      <form
-        onSubmit={formik.handleSubmit}
-        className="flex flex-col justify-between text-center "
-      >
-        <span className="m-5  ">
-          <input
-            id="name"
-            type="text"
-            placeholder="Name"
-            onChange={formik.handleChange}
-            value={formik.values.name}
-            className=" w-[30%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
-          />
+        <div>
+          <h1 className="text-4xl text-white font-semibold p-5 text-center">
+            DISCUSS A PROJECT OR JUST WANT TO SAY HI?
+            <br /> <span className="">MY INBOX IS OPEN FOR ALL..!</span>
+          </h1>
+        </div>
+        <form
+          ref={form}
+          onSubmit={formik.handleSubmit}
+          className="flex flex-col justify-between text-center "
+        >
+          <span className="m-5  ">
+            <input
+              name="name"
+              type="text"
+              placeholder="Name"
+              onChange={formik.handleChange}
+              value={formik.values.name}
+              className=" w-[30%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
+            />
 
-          <input
-            id="email"
-            type="email"
-            onChange={formik.handleChange}
-            value={formik.values.email}
-            placeholder="Email"
-            className="w-[40%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
-          />
-        </span>
+            <input
+              name="email"
+              type="email"
+              onChange={formik.handleChange}
+              value={formik.values.email}
+              placeholder="Email"
+              className="w-[40%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
+            />
+          </span>
 
-        <span className="m-5  ">
-          <input
-            id="phone"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.phone}
-            placeholder="Phone"
-            className="w-[30%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
-          />
+          <span className="m-5  ">
+            <input
+              name="phone"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.phone}
+              placeholder="Phone"
+              className="w-[30%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
+            />
 
-          <input
-            id="subject"
-            type="text"
-            onChange={formik.handleChange}
-            value={formik.values.subject}
-            placeholder="Subject"
-            className="w-[40%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
-          />
-        </span>
-        <span>
-          <input
-            id="message"
-            type="text"
-            onChange={formik.handleChange}
-            placeholder="Message..."
-            value={formik.values.message}
-            className="w-9/12 m-3 pl-3 bg-transparent ml-5 border-b-4 text-white border-white  outline-none"
-          />
-        </span>
+            <input
+              name="subject"
+              type="text"
+              onChange={formik.handleChange}
+              value={formik.values.subject}
+              placeholder="Subject"
+              className="w-[40%] mx-5 border-b-4 text-white border-white  outline-none bg-transparent"
+            />
+          </span>
+          <span>
+            <input
+              name="message"
+              type="text"
+              onChange={formik.handleChange}
+              placeholder="Message..."
+              value={formik.values.message}
+              className="w-9/12 m-3 pl-3 bg-transparent ml-5 border-b-4 text-white border-white  outline-none"
+            />
+          </span>
 
-        <span className="text-center">
-          <button
-            type={`${formik.isSubmitting}?"submit":"null"`}
-            className="bg-orange-400 rounded-2xl text-center p-1 m-5 w-[40%]"
-          >
-            Submit
-          </button>
-        </span>
-      </form>
+          <span className="text-center">
+            <button
+              type={`${formik.isSubmitting}?"submit":"null"`}
+              className="bg-orange-400 rounded-2xl text-center p-1 m-5 w-[40%]"
+            >
+              Submit
+            </button>
+          </span>
+        </form>
       </span>
     </div>
   );

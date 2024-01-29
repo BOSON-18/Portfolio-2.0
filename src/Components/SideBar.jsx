@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const SideBar = () => {
   return (
-    <div className="flex  fixed left-0   h-fit w-[18%] flex-col  p-5 ml-[20px] bg-[#1c1b23]  border border-transparent  border-[#8b8a91]  text-primary rounded-lg  overflow-y-auto pb-20 md:pb-5 z-20">
+    <div className="flex  fixed left-0   h-fit w-[15.5%] flex-col  p-5 ml-[20px] bg-[#1c1b23]  border border-transparent  border-[#8b8a91]  text-primary rounded-lg  overflow-y-auto pb-20 md:pb-5 z-20">
       
       
       <div>

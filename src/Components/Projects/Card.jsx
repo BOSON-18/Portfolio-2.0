@@ -12,7 +12,7 @@ const Card = ({ image, name, techStack }) => {
         {/* Name */}
         <h1 className="flex font-bold">{name}</h1>
         {/* TechStack */}
-        <p className="flex text-info text-xs">{techStack.join(", ")}</p>
+      {techStack?  <p className="flex text-info text-xs">{techStack.join(", ")}</p>:null}
       </div>
     </div>
   );
