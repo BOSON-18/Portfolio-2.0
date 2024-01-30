@@ -8,8 +8,8 @@ import Card from "./Projects/Card";
 
 const Education = () => {
   return (
-    <div className="p-8 gap-2 translate-y-[-50px]">
-      <div className="text-3xl font-semibold font-sans">Education</div>
+    <div className="p-7 gap-2 translate-y-[-50px]">
+      <div className="text-4xl font-semibold font-sans">Education</div>
       <div className="flex bg-[#1c1b23] justify-between p-16 rounded-xl items-center mt-8">
         {/* Img */}
         <div>
@@ -28,7 +28,7 @@ const Education = () => {
       </div>
       <h1 className="text-4xl  font-semibold mt-12 ">Extra Curricular Activities</h1>
       <div className=" rounded-xl ">
-      <div className="flex flex-row justify-between gap-x-8   ">
+      <div className="flex flex-row justify-between gap-x-8 p-5 -ml-1 ">
         {clubData.map((item, index) => (
           <div key={index} className="flex flex-col items-center justify-center bg-[#1c1b23] rounded-xl  w-[290px] h-[300px] mt-5 gap-y-5 ">
             <img src={item.icon} alt="logo" className=" w-[150px] rounded-full mt-4  object-fill bg-inherit  " />

@@ -10,7 +10,7 @@ const Card = ({ heading, stack }) => {
         <div className="flex flex-row flex-wrap justify-evenly pt-4 gap-x-5  ">
           {stack.map((element, index) => {
             return (
-              <div className=" m-2 gap-8 ">
+              <div className=" m-2 gap-8 " key={index}>
                 <div className="flex flex-col items-center justify-center gap-1 font-sans ">
                   <span className="">
                   {element.icon}

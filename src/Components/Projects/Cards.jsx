@@ -10,7 +10,7 @@ const Cards = () => {
             {
                 Projects.map((item,index)=>{
                     return(
-                        <div>
+                        <div key={index}>
                             <a href={item.gitHub}>
                             <Card image={item.image} name={item.name} techStack={item.techStack} key={index} />
                             </a>

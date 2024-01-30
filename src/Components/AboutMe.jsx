@@ -5,7 +5,7 @@ import hello from '../assets/hello.lottie'
 const AboutMe = () => {
   return (
     <div className="flex flex-col  text-xl p-8 gap-6  ">
-      <div className="text-3xl font-semibold font-sans ">About Me</div>
+      <div className="text-4xl font-semibold font-sans ">About Me</div>
       <div className="flex bg-[#1c1b23] justify-between p-8 rounded-xl">
       <div className="text-lg leading-[36px] mt-4 mx-auto lg:mx-0 w-[90%]  p-5 text-wrap rounded-xl">
       I, am a skilled web developer with a unique blend of coding expertise and

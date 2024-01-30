@@ -14,7 +14,7 @@ const SideBar = () => {
         {
           sideBarArray.map((item,index)=>{
             return(
-              <a to={item.link}>
+              <a to={item.link} key={index}>
               <div className="flex flex-row my-8 items-center font-sans text-[#8b8a91] text-sm  m-5">
                 <span className="mr-4 my-2">
                     {item.icon}
@@ -40,7 +40,7 @@ const SideBar = () => {
           {
             socialArray.map((item,index)=>{
               return(
-                <div>
+                <div key={index}>
                   <a href={item.link}>
                   <div className="flex flex-row my-8 items-center font-sans text-[#8b8a91] text-sm m-5">
                     <span className="mr-4 my-2">

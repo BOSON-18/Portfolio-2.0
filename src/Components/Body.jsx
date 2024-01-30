@@ -12,7 +12,7 @@ import { GoDownload } from "react-icons/go";
 
 const Body = () => {
   return (
-    <div className="gap-y-8 overflow-hidden bg-[#14131A] scroll-smooth">
+    <div className=" overflow-hidden bg-[#14131A] scroll-smooth">
 
       {/* Section 0 */}
      
@@ -66,10 +66,10 @@ const Body = () => {
 
       {/* Section2  */}
 
-      <section className="mt-2 w-[90%] ml-5 p-5">
+      <section className=" w-[90%] ml-4 -mt-10 p-5">
         <div>
           <div>
-            <h1 className="text-2xl font-semibold">Projects</h1>
+            <h1 className="text-4xl font-semibold">Projects</h1>
           </div>
           <div>
             <Cards />
@@ -79,7 +79,7 @@ const Body = () => {
 
       {/* Section 3 */}
 
-      <section className="mt-2 w-[90%] ml-5 p-5">
+      <section className="mt-2 w-[90%] ml-4 p-5">
         <div>
           <TechCards />
         </div>
