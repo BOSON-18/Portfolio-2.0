@@ -5,6 +5,7 @@ import { sideBarArray } from "../data/SideBarData";
 import { Link } from "react-router-dom";
 
 import {motion} from 'framer-motion'
+import scrollAnimation from "../framer/scrollAnimation";
 const SideBar = () => {
 
   let i=0;
@@ -18,7 +19,7 @@ const SideBar = () => {
           sideBarArray.map((item,index)=>{
             return(
               <a  to={item.link} key={index}>
-              <motion.div whileHover={{scale:1.2}}  className="flex flex-row my-6 items-center font-sans text-[#8b8a91] text-sm  m-5">
+              <motion.div whileHover={{scale:1.2}} whileTap={()=>scrollAnimation(item?.id)}  className="flex flex-row my-6 items-center font-sans text-[#8b8a91] text-sm  m-5">
                 <span className="mr-4 my-2">
                     {item.icon}
                     </span>

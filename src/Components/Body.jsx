@@ -18,6 +18,7 @@ const Body = () => {
       {/* Section 0 */}
      
       {/* Section 1 */}
+      <section id="startPoint">
       <motion.section initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}}>
         <div className="border-1 relative">
           <img
@@ -27,7 +28,7 @@ const Body = () => {
             alt="cover"
           ></img>
         </div>
-        <div className=" absolute translate-y-[-140px] flex flex-row gap-x-[500px] items-center ml-[60px] ">
+        <div className=" absolute top-[100px] flex flex-row gap-x-[500px] items-center ml-[60px] ">
           {/* Initials */}
           <div className="flex flex-row  items-center gap-9">
             {/* img */}
@@ -59,15 +60,16 @@ const Body = () => {
           </div>
         </div>
       </motion.section>
+      </section>
 
-      <section className="">
+      <section id="info">
         <AboutMe/>
         <Education/>
       </section>
 
       {/* Section2  */}
 
-      <section className=" w-[90%] -mt-10 p-5">
+      <section id="snippet" className=" w-[90%] -mt-10 p-5">
         <motion.div initial={{x:200,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:"keyframes",duration:0.8}}>
           <div>
             <h1 className="text-4xl font-semibold">Projects</h1>
@@ -80,7 +82,7 @@ const Body = () => {
 
       {/* Section 3 */}
 
-      <section className="mt-2 w-[90%]  p-5">
+      <section id="techStack" className="mt-2 w-[90%]  p-5">
         <motion.div initial={{x:200,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:"keyframes",duration:0.8}}>
           <TechCards />
         </motion.div >
