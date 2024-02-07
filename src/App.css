@@ -16,7 +16,5 @@
     -ms-overflow-style: none;
   }
 
-  .bg-blur {
-    backdrop-filter: blur(5px); /* Adjust the blur radius as needed */
-  }
+ 
   

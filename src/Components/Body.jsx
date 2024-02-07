@@ -20,15 +20,15 @@ const Body = () => {
       {/* Section 1 */}
       <section id="startPoint">
       <motion.section initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}}>
-        <div className="border-1 relative">
+        <div className="border-1 relative blur-sm">
           <img
             src={cover}
-            className="w-full h-[180px]  object-fill "
+            className="w-full h-[180px]  object-fill  "
           
             alt="cover"
           ></img>
         </div>
-        <div className=" absolute top-[100px] flex flex-row gap-x-[500px] items-center ml-[80px] ">
+        <div className=" absolute top-[100px]  flex flex-row gap-x-[500px] items-center ml-[80px] ">
           {/* Initials */}
           <div className="flex flex-row  items-center gap-9">
             {/* img */}
