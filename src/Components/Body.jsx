@@ -13,7 +13,7 @@ import {motion} from 'framer-motion'
 
 const Body = () => {
   return (
-    <motion.div initial={{size:0}} animate={{size:1}} transition={{duration:0.5,delay:0.6}} className=" overflow-hidden bg-[#14131A] scroll-smooth">
+    <motion.div initial={{size:0}} animate={{size:1}} transition={{duration:0.5,delay:0.8}} className=" overflow-hidden bg-[#14131A] scroll-smooth">
 
       {/* Section 0 */}
      
@@ -23,12 +23,12 @@ const Body = () => {
         <div className="border-1 relative">
           <img
             src={cover}
-            className="w-full h-[160px]  object-fill "
+            className="w-full h-[180px]  object-fill "
           
             alt="cover"
           ></img>
         </div>
-        <div className=" absolute top-[100px] flex flex-row gap-x-[500px] items-center ml-[60px] ">
+        <div className=" absolute top-[100px] flex flex-row gap-x-[500px] items-center ml-[80px] ">
           {/* Initials */}
           <div className="flex flex-row  items-center gap-9">
             {/* img */}

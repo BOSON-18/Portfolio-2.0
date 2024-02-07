@@ -10,14 +10,14 @@ import {motion} from "framer-motion"
 const Education = () => {
   return (
     <div className="p-5 gap-2 translate-y-[-50px] font-thin">
-      <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:100,x:0}} transition={{duration:0.8,delay:0.01}} className="text-4xl font-semibold font-sans">Education</motion.div>
+      <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:100,x:0}} transition={{duration:0.8}} className="text-4xl font-semibold font-sans">Education</motion.div>
       <motion.div initial={{opacity:0}} whileInView={{opacity:100}} className="flex bg-[#1c1b23] justify-between p-12 rounded-xl items-center mt-8">
         {/* Img */}
-        <motion.div initial={{x:-100}} whileInView={{x:0}} transition={{duration:0.4,delay:0.01}}>
+        <motion.div initial={{x:-100}} whileInView={{x:0}} transition={{duration:0.4}}>
           <DotLottiePlayer src={Study} autoplay loop className="w-[300px]"></DotLottiePlayer>
         </motion.div>
         {/* Info */}
-        <motion.div  initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4,delay:0.01}} className="">
+        <motion.div  initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}} className="">
           <span className="flex items-center gap-5">
             {/* <img src={IET} alt="logo" className="w-[80px]" /> */}
             <h1 className="text-6xl  font-semibold gap-y-[30px]">IET DAVV</h1>
@@ -27,7 +27,7 @@ const Education = () => {
           <h3 className="flex flex-row items-center  gap-5 text-2xl ml-3"><IoLocationOutline /> Indore, Madhya Pradesh</h3>
         </motion.div>
       </motion.div>
-      <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4,delay:0.01}}>
+      <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}}>
       <h1 className="text-4xl  font-semibold mt-12 ">Extra Curricular Activities</h1>
       <div className=" rounded-xl ">
       <div  className="flex flex-row gap-x-4 p-4 mt-5 md:p-0  ">
