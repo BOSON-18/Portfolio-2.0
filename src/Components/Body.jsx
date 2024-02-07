@@ -9,15 +9,16 @@ import AboutMe from "./AboutMe";
 import Education from "./Education";
 import resume from '../assets/Resume.pdf'
 import { GoDownload } from "react-icons/go";
+import {motion} from 'framer-motion'
 
 const Body = () => {
   return (
-    <div className=" overflow-hidden bg-[#14131A] scroll-smooth">
+    <motion.div initial={{size:0}} animate={{size:1}} transition={{duration:0.5,delay:0.6}} className=" overflow-hidden bg-[#14131A] scroll-smooth">
 
       {/* Section 0 */}
      
       {/* Section 1 */}
-      <section>
+      <motion.section initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}}>
         <div className="border-1 relative">
           <img
             src={cover}
@@ -26,15 +27,15 @@ const Body = () => {
             alt="cover"
           ></img>
         </div>
-        <div className=" absolute translate-y-[-140px] flex flex-row justify-between items-center px-14 gap-x-[600px]">
+        <div className=" absolute translate-y-[-140px] flex flex-row gap-x-[500px] items-center ml-[60px] ">
           {/* Initials */}
-          <div className="flex flex-row justify-between items-center gap-11">
+          <div className="flex flex-row  items-center gap-9">
             {/* img */}
             <div>
               <img
                 src={profile}
                 alt="profilePic"
-                className="rounded-full border-white border-4 h-[128px]"
+                className="rounded-full border-white border-4 w-[130px]"
               />
             </div>
             {/* Info */}
@@ -57,39 +58,39 @@ const Body = () => {
             </a>
           </div>
         </div>
-      </section>
+      </motion.section>
 
-      <section>
+      <section className="">
         <AboutMe/>
         <Education/>
       </section>
 
       {/* Section2  */}
 
-      <section className=" w-[90%] ml-4 -mt-10 p-5">
-        <div>
+      <section className=" w-[90%] -mt-10 p-5">
+        <motion.div initial={{x:200,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:"keyframes",duration:0.8}}>
           <div>
             <h1 className="text-4xl font-semibold">Projects</h1>
           </div>
           <div>
             <Cards />
           </div>
-        </div>
+        </motion.div>
       </section>
 
       {/* Section 3 */}
 
-      <section className="mt-2 w-[90%] ml-4 p-5">
-        <div>
+      <section className="mt-2 w-[90%]  p-5">
+        <motion.div initial={{x:200,opacity:0}} whileInView={{x:0,opacity:1}} transition={{type:"keyframes",duration:0.8}}>
           <TechCards />
-        </div>
+        </motion.div >
       </section>
 
       {/* Form */}
       <section>
         <ContactUs />
       </section>
-    </div>
+    </motion.div>
   );
 };
 

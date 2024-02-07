@@ -6,15 +6,15 @@ const Cards = () => {
     
   return (
     <div>
-        <div className='grid grid-flow-col gap-8 p-5 mt-5 md:p-0 '>
+        <div className='flex flex-row gap-x-4 p-5 mt-5 md:p-0 '>
             {
                 Projects.map((item,index)=>{
                     return(
-                        <div key={index}>
-                            <a href={item.gitHub}>
-                            <Card image={item.image} name={item.name} techStack={item.techStack} key={index} />
+                       
+                            <a href={item.gitHub} key={index}>
+                            <Card image={item.image} name={item.name} techStack={item.techStack}  />
                             </a>
-                        </div>
+                        
                     )
                 })
             }

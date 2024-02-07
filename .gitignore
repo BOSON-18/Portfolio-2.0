@@ -28,3 +28,8 @@ src/firebase.jsx
 
 # Local Netlify folder
 .netlify
+src/.env
+.firebaserc
+firebase.json
+src/firebase.js
+src/Components/Form/ContactUs.jsx

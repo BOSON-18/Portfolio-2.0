@@ -14,7 +14,7 @@ export const techStack = [
       {label:"Tailwind",icon:<SiTailwindcss className="text-3xl hover:text-[#61DBFB]"/>},
       {label:"Framer-Motion",icon:<FiFramer className="text-3xl  hover:text-[#C41277]"/>},
       {label:"Javascript",icon:<SiJavascript className="text-3xl  hover:text-[#ffea60]"/>},
-      {label:"Typescript",icon:<BiLogoTypescript className="text-3xl  hover:text-[#007ACC]"/>},
+      // {label:"Typescript",icon:<BiLogoTypescript className="text-3xl  hover:text-[#007ACC]"/>},
       {label:"React Js",icon:<FaReact className="text-3xl  hover:text-[#61DAFB] "/>},
       {label:"Next Js",icon:<TbBrandNextjs className="text-3xl  hover:text-[#3F51B5]"/>},
     ],

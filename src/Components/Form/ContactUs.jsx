@@ -1,13 +1,17 @@
 import React, { useRef } from "react";
 import { useFormik } from "formik";
-import Cover from "../../assets/Contact.jpg";
-import Header from "../Header";
 
 import Contact from "../../assets/Contactus.lottie";
 import { DotLottiePlayer } from "@dotlottie/react-player";
 import emailjs from "@emailjs/browser";
-import { service_ID, template_id, user_key } from "../../constants";
+// ContactUs.jsx or ContactUs.vue
 
+const service_ID = import.meta.env.VITE_SERVICE_ID;
+const template_id = import.meta.env.VITE_TEMPLATE_ID;
+const user_key = import.meta.env.VITE_USER_KEY;
+
+// Now you can use serviceID, templateID, and userKey in your code
+import {motion} from "framer-motion"
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
@@ -60,7 +64,7 @@ const ContactUs = () => {
   });
 
   return (
-    <div className=" flex flex-row ml-8   items-center justify-between  rounded-xl opacity-80  bg-[#1c1b23] p-10 mr-5 gap-x-11  ">
+    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={{duration:0.8,delay:0.1}} className=" flex flex-row    items-center justify-between  rounded-xl opacity-80  bg-[#1c1b23] p-5   ">
       <div>
         <DotLottiePlayer
           src={Contact}
@@ -141,7 +145,7 @@ const ContactUs = () => {
           </span>
         </form>
       </span>
-    </div>
+    </motion.div>
   );
 };
 
