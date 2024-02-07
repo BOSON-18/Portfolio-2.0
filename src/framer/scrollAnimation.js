@@ -7,10 +7,10 @@ const scrollAnimation=(id)=>{
     const targetElement = document.getElementById(id);
     if (targetElement) {
       targetElement.scrollIntoView({
-        behavior: 'smooth',
+        behavior: 'auto',
         block: 'center',
          inline:'start',
-        duration:1200
+        duration:800
       });
     }
 
