@@ -23,8 +23,8 @@ const Body = () => {
         <div className="border-1 relative">
           <img
             src={cover}
-            className="w-full h-[160px]  object-fill bg-blur backdrop-filter backdrop-blur-md"
-            style={{ backdropFilter: "backdrop-blur-md" }}
+            className="w-full h-[160px]  object-fill "
+          
             alt="cover"
           ></img>
         </div>
