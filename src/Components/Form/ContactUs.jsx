@@ -6,9 +6,9 @@ import { DotLottiePlayer } from "@dotlottie/react-player";
 import emailjs from "@emailjs/browser";
 // ContactUs.jsx or ContactUs.vue
 
-const service_ID = import.meta.env.VITE_SERVICE_ID;
-const template_id = import.meta.env.VITE_TEMPLATE_ID;
-const user_key = import.meta.env.VITE_USER_KEY;
+const service_ID = import.meta.env.VITE_service_ID;
+const template_id = import.meta.env.VITE_template_id;
+const user_key = import.meta.env.VITE_public_Key;
 
 // Now you can use serviceID, templateID, and userKey in your code
 import {motion} from "framer-motion"
