@@ -87,7 +87,7 @@ const Body = () => {
       </section>
 
       {/* Form */}
-      <section>
+      <section id="contactForm">
         <ContactUs />
       </section>
     </motion.div>

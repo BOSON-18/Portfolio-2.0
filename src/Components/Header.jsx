@@ -5,6 +5,16 @@ import {LazyMotion, domAnimation, motion} from 'framer-motion'
 
 const Header = ({ location }) => {
   // const location=useLocation();
+  const scrollToTarget = () => {
+    const targetElement = document.getElementById('contactForm');
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+        duration:1200
+      });
+    }
+  };
 
   return (
    
@@ -18,9 +28,9 @@ const Header = ({ location }) => {
         </div>
       </motion.div>
       <motion.div className="p-6" initial={{opacity:0}} animate={{y:0,opacity:1}} transition={{duration:0.3,type:"keyframes"}}>
-        <button className=" bg-[#207448] p-2 rounded-lg flex gap-5 items-center hover:bg-[#28D576] mr-8 text-[16px]">
+        <motion.button onClick={scrollToTarget}  className=" bg-[#207448] p-2 rounded-lg flex gap-5 items-center hover:bg-[#28D576] mr-8 text-[16px]">
           Contact Me <IoPersonOutline />
-        </button>
+        </motion.button>
       </motion.div>
     </div>
  
