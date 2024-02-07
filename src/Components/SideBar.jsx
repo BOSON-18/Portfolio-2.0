@@ -18,7 +18,7 @@ const SideBar = () => {
         {
           sideBarArray.map((item,index)=>{
             return(
-              <a  to={item.link} key={index}>
+              <a  href={item?.link} key={index}>
               <motion.div whileHover={{scale:1.2}} whileTap={()=>scrollAnimation(item?.id)}  className="flex flex-row my-6 items-center font-sans text-[#8b8a91] text-sm  m-5">
                 <span className="mr-4 my-2">
                     {item.icon}
