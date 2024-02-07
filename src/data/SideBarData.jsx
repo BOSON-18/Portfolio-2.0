@@ -2,6 +2,7 @@ import { FiHome } from "react-icons/fi";
 import { FaFire } from "react-icons/fa";
 import { IoCode } from "react-icons/io5";
 import { IoVideocamOutline } from "react-icons/io5";
+import { PiBooksDuotone } from "react-icons/pi";
 
 export const sideBarArray = [
   {
@@ -10,13 +11,13 @@ export const sideBarArray = [
     id: 'startPoint'
   },
   {
-    icon: <FaFire className="text-3xl" />,
-    label: "About Me",
+    icon: <PiBooksDuotone className="text-3xl" />,
+    label: "Education",
     id: 'info'
   },
   {
     icon: <IoCode className="text-3xl" />,
-    label: "Snippet",
+    label: "Projects",
     id: 'snippet'
   },
   {
