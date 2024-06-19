@@ -6,7 +6,7 @@ const Cards = () => {
     
   return (
     <div>
-        <div className='flex flex-row gap-x-4 p-5 mt-5 md:p-0 '>
+        <div className='flex flex-row gap-x-4 p-5 mt-5 md:p-0 max-sm:flex-col max-sm:gap-y-8 max-sm:justify-center'>
             {
                 Projects.map((item,index)=>{
                     return(

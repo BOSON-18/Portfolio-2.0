@@ -11,7 +11,7 @@ const Header = ({ location }) => {
 
   return (
    
-    <div  className="flex flex-row justify-between w-full mb-5   fixed top-0 z-10   bg-inherit backdrop-blur-md">
+    <div  className="flex flex-row justify-between w-full mb-5   fixed top-0 z-10   bg-inherit backdrop-blur-md max-sm:hidden">
       <motion.div className="gap-6 pt-5 pl-6 " initial={{opacity:0}} animate={{y:0,opacity:1}} transition={{duration:1,type:"keyframes"}} >
         <div className="fill-[#ffffff] bg-[#2BD576] h-4 w-4 inline-block rounded-full mx-3">
           {" "}

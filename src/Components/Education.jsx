@@ -9,28 +9,29 @@ import {motion} from "framer-motion"
 
 const Education = () => {
   return (
-    <div className="p-5 gap-2 translate-y-[-50px] font-thin">
+    <div className="p-5 gap-2 translate-y-[-50px] font-thin mx-auto">
       <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:100,x:0}} transition={{duration:0.8}} className="text-4xl font-semibold font-sans">Education</motion.div>
-      <motion.div initial={{opacity:0}} whileInView={{opacity:100}} className="flex bg-[#1c1b23] justify-between p-12 rounded-xl items-center mt-8">
+      <motion.div initial={{opacity:0}} whileInView={{opacity:100}} className="flex max-sm:flex-col bg-[#1c1b23] justify-between p-12 rounded-xl items-center mt-8">
         {/* Img */}
         <motion.div initial={{x:-100}} whileInView={{x:0}} transition={{duration:0.4}}>
           <DotLottiePlayer src={Study} autoplay loop className="w-[300px]"></DotLottiePlayer>
         </motion.div>
         {/* Info */}
-        <motion.div  initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}} className="">
+        <motion.div  initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}} className="max-sm:text-sm">
           <span className="flex items-center gap-5">
             {/* <img src={IET} alt="logo" className="w-[80px]" /> */}
             <h1 className="text-6xl  font-semibold gap-y-[30px]">IET DAVV</h1>
           </span>
-          <h2 className="text-2xl my-3 mt-5 ml-3 font-thin">Bachelors of Engineering in Electronics and Telecommunication</h2>
-          <h3 className="ml-3 my-3 text-2xl font-thin ">November 2021 - Present</h3>
-          <h3 className="flex flex-row items-center  gap-5 text-2xl ml-3"><IoLocationOutline /> Indore, Madhya Pradesh</h3>
+          
+          <h2 className="text-2xl my-3 mt-5 ml-3 font-thin max-sm:text-lg">Bachelors of Engineering in Electronics and Telecommunication</h2>
+          <h3 className="ml-3 my-3 text-2xl font-thin max-sm:text-lg">November 2021 - Present</h3>
+          <h3 className="flex flex-row items-center  gap-5 text-2xl ml-3 max-sm:text-lg"><IoLocationOutline /> Indore, Madhya Pradesh</h3>
         </motion.div>
       </motion.div>
-      <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}}>
+      <motion.div initial={{x:100}} whileInView={{x:0}} transition={{duration:0.4}} className="mx-auto">
       <h1 className="text-4xl  font-semibold mt-12 ">Extra Curricular Activities</h1>
-      <div className=" rounded-xl ">
-      <div  className="flex flex-row gap-x-4 p-4 mt-5 md:p-0  ">
+      <div className=" rounded-xl mx-auto ">
+      <div  className="flex flex-row gap-x-4 p-4 mt-5 md:p-0 max-sm:flex-col max-sm:gap-10 mx-auto">
         {clubData.map((item, index) => (
           <div key={index} className="flex flex-col items-center justify-center bg-[#1c1b23]  text-zinc-800 rounded-xl  w-[290px] h-[290px]  ">
             <div className=" object-fill mx-auto text-center">

@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ image, name, techStack }) => {
   return (
-    <div className="flex flex-col overflow-hidden gap-3 bg-white text-zinc-800 rounded-lg overflow-ellipsis w-[280px] h-[280px]">
+    <div className="flex flex-col overflow-hidden gap-3 bg-white text-zinc-800 rounded-lg overflow-ellipsis w-[280px] h-[280px] max-sm:mx-auto">
       {/* image */}
       <div className="aspect-video object-fill ">
         {image}

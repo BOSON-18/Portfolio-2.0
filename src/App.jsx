@@ -15,11 +15,11 @@ const App = () => {
       
       <Header location={location} />
       
-      <div className='flex  mt-16'>
-        <div  className='w-[20%]  -mt-2' >
+      <div className='flex flex-row  justify-center gap-5 text-white mt-16 max-sm:mt-0'>
+        <div  className=' -mt-2 max-sm:hidden lg:w-fit' >
         <SideBar  />
         </div>
-        <div className='w-[80%] m-5'>
+        <div className=' mx-auto'>
           {console.log("Body Rendering")}
        <Body/>
         </div>

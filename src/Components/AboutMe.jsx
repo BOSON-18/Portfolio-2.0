@@ -5,10 +5,10 @@ import hello from '../assets/hello.lottie'
 import {motion} from 'framer-motion'
 const AboutMe = () => {
   return (
-    <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}} className="flex flex-col  text-xl p-5 gap-5 ">
+    <motion.div  initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}} className="flex flex-col  text-xl p-5 gap-5 max-w-full max-sm:w-fit ">
       <motion.div initial={{opacity:0,x:-100}} whileInView={{opacity:100,x:0}} transition={{duration:0.8}}  className="text-4xl font-semibold font-sans">About Me</motion.div>
-      <div className="flex bg-[#1c1b23] justify-between p-8 rounded-xl">
-      <motion.div initial={{x:-100}} whileInView={{x:0}} transition={{duration:0.4}} className="text-pretty font-thin leading-[36px] mt-4 mx-auto lg:mx-0 w-[90%]   p-1  rounded-xl"> 
+      <div className="flex max-sm:flex-col-reverse bg-[#1c1b23] justify-between p-8 max-sm:p-4 rounded-xl">
+      <motion.div initial={{x:-100}} whileInView={{x:0}} transition={{duration:0.4}} className="text-pretty font-thin leading-[36px] mt-4 mx-auto lg:mx-0 w-[90%] max-sm:text-sm max-sm:text-pretty   p-1  rounded-xl"> 
       I, am a skilled web developer with a unique blend of coding expertise and
       aesthetic sensibility. My passion for technology drives me to continuously
       expand my skill set, and I am an enthusiast learning cutting-edge editing

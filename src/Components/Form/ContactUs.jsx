@@ -64,7 +64,7 @@ const ContactUs = () => {
   });
 
   return (
-    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={{duration:0.8,delay:0.1}} className=" flex flex-row    items-center justify-between  rounded-xl opacity-80  bg-[#1c1b23] p-5   ">
+    <motion.div initial={{opacity:0,y:100}} whileInView={{opacity:1,y:0}} transition={{duration:0.8,delay:0.1}} className=" flex flex-row  max-sm:flex-col max-sm:gap-10 max-sm:rounded-none   items-center justify-between  rounded-xl opacity-80  bg-[#1c1b23] p-5   ">
       <div>
         <DotLottiePlayer
           src={Contact}
