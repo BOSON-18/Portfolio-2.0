@@ -18,48 +18,45 @@ const Body = () => {
       {/* Section 0 */}
      
       {/* Section 1 */}
-      <section id="startPoint" className="max-w-full max-sm:w-screen ">
-      <motion.section initial={{opacity:0}} whileInView={{opacity:1}} transition={{duration:0.8,delay:0.1}} className="w-full max-sm:w-screen relative flex items-center justify-around" >
-        <div className="border-1  blur-sm max-sm:w-screen flex items-center justify-center mx-auto ">
-          <img
-            src={cover}
-            className=" h-[280px] p-10  object-fill w-screen max-sm:w-screen  "
-          
-            alt="cover"
-          ></img>
-        </div>
-        <div className=" absolute  w-full   flex flex-row gap-x-[500px] items-center justify-around  ">
-          {/* Initials */}
-          <div className="flex flex-row  items-center gap-9">
-            {/* img */}
-            <div>
-              <img
-                src={profile}
-                alt="profilePic"
-                className="rounded-full border-white border-4 w-[130px] max-sm:hidden"
-              />
-            </div>
-            {/* Info */}
-            <div className="flex flex-col ">
-              <h1 className="text-3xl font-bold max-sm:hidden">Deeshank Batra</h1>
-              <h2 className="font-sans text-sm max-sm:hidden">@clumsyshots_</h2>
-            </div>
-          </div>
+        <section id="startPoint" className="max-w-[95%] max-sm:w-screen">
+        <motion.section
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.1 }}
+          className="relative flex items-center justify-center w-full max-sm:w-screen"
+        >
+          <div className="relative w-full flex justify-center items-center">
+            <img
+              src={cover}
+              className="h-[280px] w-full object-cover p-10 max-sm:w-screen blur-sm"
+              alt="cover"
+            />
+            <div className="absolute flex flex-col sm:flex-row items-center justify-around gap-6 w-full px-4">
+              {/* Initials */}
+              <div className="flex flex-col sm:flex-row items-center gap-4">
+                <img
+                  src={profile}
+                  alt="profilePic"
+                  className="rounded-full border-4 border-white w-[130px] hidden sm:block"
+                />
+                <div className="text-center sm:text-left">
+                  <h1 className="text-3xl font-bold">Deeshank Batra</h1>
+                  <h2 className="font-sans text-sm">@clumsyshots_</h2>
+                </div>
+              </div>
 
-          {/* Follow me  */}
-          <div className="mx-auto">
-            <a href={resume} download >
-            <button className="flex flex-row justify-around items-center gap-3 font-semibold bg-[#1c1b23] text-[#8b8a91] py-2 px-4 rounded-md text-xs">
-              Download Resume
-              {" "}
-              <span className="text-xl font-bold">
-                <GoDownload/>
-              </span>
-            </button>
-            </a>
+              {/* Follow me */}
+              <div className="mt-4 sm:mt-0">
+                <a href={resume} download>
+                  <button className="flex items-center gap-3 font-semibold bg-[#1c1b23] text-[#8b8a91] py-2 px-4 rounded-md text-xs">
+                    Download Resume
+                    <GoDownload className="text-xl font-bold" />
+                  </button>
+                </a>
+              </div>
+            </div>
           </div>
-        </div>
-      </motion.section>
+        </motion.section>
       </section>
 
       <section id="info" className="mx-auto">
