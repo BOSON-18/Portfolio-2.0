@@ -2,7 +2,7 @@ import React from "react";
 
 const Card = ({ heading, stack }) => {
   return (
-    <div className="w-[280px] bg-[#1c1b23] rounded-lg h-[290px]">
+    <div className="w-[300px] bg-[#1c1b23] rounded-lg h-[300px]">
       <div className="flex flex-col p-5 ">
         <div>
         <h1 className=" text-3xl">{heading}</h1>

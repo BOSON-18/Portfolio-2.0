@@ -33,7 +33,7 @@ const Education = () => {
       <div className=" rounded-xl mx-auto ">
       <div  className="flex flex-row gap-x-4 p-4 mt-5 md:p-0 max-sm:flex-col max-sm:gap-10 mx-auto">
         {clubData.map((item, index) => (
-          <div key={index} className="flex flex-col items-center justify-center bg-[#1c1b23]  text-zinc-800 rounded-xl  w-[290px] h-[290px]  ">
+          <div key={index} className="flex flex-col items-center justify-center bg-[#1c1b23]  text-zinc-800 rounded-xl  w-[300px] h-[300px]  ">
             <div className=" object-fill mx-auto text-center">
             <img src={item.icon} alt="logo" className=" w-[150px] rounded-full mt-4  object-fill  bg-[#1c1b23] " />
             </div>
