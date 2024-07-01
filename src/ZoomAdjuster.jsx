@@ -7,7 +7,7 @@ const ZoomAdjuster = () => {
       if (window.innerWidth < 1200) {
         document.body.style.zoom = '100%';
       } else {
-        document.body.style.zoom = '100%';
+        document.body.style.zoom = '95%';
       }
     };
 
