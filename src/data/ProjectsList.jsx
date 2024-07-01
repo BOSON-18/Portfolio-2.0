@@ -1,7 +1,7 @@
 import StudyNotion from "../assets/Cards/Study.png";
 import Dashboard from "../assets/Cards/Admin.png";
 import Zoom from "../assets/Cards/Stream.png";
-import Youtube from "../assets/Cards/YouTube.jpeg";
+import Youtube from "../assets/Cards/Youtube.jpeg";
 
 export const Projects = [
   {
