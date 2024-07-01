@@ -5,7 +5,7 @@ const ZoomAdjuster = () => {
   useEffect(() => {
     const handleResize = () => {
       if (window.innerWidth < 1200) {
-        document.body.style.zoom = '100%';
+        document.body.style.zoom = '95%';
       } else {
         document.body.style.zoom = '95%';
       }
