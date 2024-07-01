@@ -25,15 +25,15 @@ export const Projects = [
     gitHub:"https://github.com/BOSON-18/namsate-youtube.git"
   },
   {
-    image: <img src={Netflix} alt="StudyNotion "/>,
-    name: "Netflix-GPT",
-    techStack: ["OPEN-AI", "Tailwind Css", "ReactJs", "Redux"],
-    gitHub:"https://github.com/BOSON-18/netflix.git"
+    image: <img src={Netflix} alt="StudyStream "/>,
+    name: "Study-Stream",
+    techStack: ["Nextjs", "Tailwind Css", "Clerk", "Stream"],
+    gitHub:"https://github.com/BOSON-18/StudyStream"
   },
   {
-    image: <img src={Netflix} alt="StudyNotion "/>,
-    name: "Swiggy-Clone",
-    techStack: ["Swiggy-API", "CORS", "Tailwind Css", "ReactJs", "Redux"],
-    gitHub:"https://github.com/BOSON-18/namsate-youtube.git"
+    image: <img src={Netflix} alt="Dashboard "/>,
+    name: "Attendance Dashboard",
+    techStack: ["ReactJs", "CORS", "MongoDB", "NodeJs", "Redux","Chartjs"],
+    gitHub:"https://github.com/BOSON-18/newDash"
   },
 ];
