@@ -5,6 +5,7 @@ import "./index.css";
 import { BrowserRouter, RouterProvider, createBrowserRouter } from "react-router-dom";
 import ContactUs from "./Components/Form/ContactUs.jsx";
 import { ToastContainer, toast } from 'react-toastify';
+import ZoomAdjuster from "./ZoomAdjuster.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <BrowserRouter>
     <div className="bg-[#14131A]">
       {" "}
+      <ZoomAdjuster/>
       <App />
       <ToastContainer />
     </div>
