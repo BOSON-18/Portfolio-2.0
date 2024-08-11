@@ -1,6 +1,6 @@
 import StudyNotion from "../assets/Cards/Study.png";
 import Dashboard from "../assets/Cards/Admin.png";
-import Zoom from "../assets/Cards/Stream.png";
+import ClumsyChats from "../assets/Cards/ClumsyChats.png";
 import Youtube from "../assets/Cards/Youtube.jpeg";
 
 export const Projects = [
@@ -25,10 +25,10 @@ export const Projects = [
     gitHub:"https://github.com/BOSON-18/namsate-youtube.git"
   },
   {
-    image: <img src={Zoom} alt="StudyStream " className="object-cover w-full h-full" />,
+    image: <img src={ClumsyChats} alt="ClumsyChats " className="object-cover w-full h-full" />,
     name: "Study-Stream",
-    techStack: ["Nextjs", "Tailwind Css", "Clerk", "Stream"],
-    gitHub:"https://github.com/BOSON-18/StudyStream"
+    techStack: ["ReactJs", "NodeJs", "Socket.io", "MongoDB"],
+    gitHub:"https://github.com/BOSON-18/clumsyChats"
   },
   {
     image: <img src={Dashboard} alt="Dashboard " className="object-cover w-full h-full" />,
