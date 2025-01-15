@@ -1,11 +1,11 @@
-import feedbox from '../assets/Clubs/Feedbox.png'
+
 import NSS from '../assets/Clubs/NSS.jpeg'
 import Phoenix from '../assets/Clubs/Phoenix.png'
 import Pratyaksh from '../assets/Clubs/Pratyaksh.jpg'
 import ECELL from '../assets/Clubs/Ecell.png'
 
 export const clubData=[{
-    name:"Production Coordinator",
+    name:"Overall Coordinator",
     icon:ECELL,
     club:"E-CELL"
 

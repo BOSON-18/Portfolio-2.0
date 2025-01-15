@@ -1,22 +1,20 @@
 /** @type {import('tailwindcss').Config} */
+import tailwindNoScrollbar from "tailwindcss-no-scrollbar";
+
 export default {
-  
-  
-  content: [
-    "./src/**/*/index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
+  content: ["./src/**/*/index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    
     fontFamily: {
       inter: ["Inter", "sans-serif"],
-      caveat: ["Caveat", 'cursive'],
+      caveat: ["Caveat", "cursive"],
       "edu-sa": ["Edu SA Beginner", "cursive"],
       mono: ["Roboto Mono", "monospace"],
     },
     extend: {
-      'cover':"url('/src/assets/cover.jpeg')"
+      backgroundImage: {
+        cover: "url('/src/assets/cover.jpeg')",
+      },
     },
   },
-  plugins: [require('tailwindcss-no-scrollbar')],
-}
+  plugins: [tailwindNoScrollbar],
+};

@@ -1,28 +1,27 @@
-import StudyNotion from "../assets/Cards/Study.png";
+import Interview from "../assets/Cards/Interview.png";
+import Reader from "../assets/Cards/ClumsyReader.png";
 import Dashboard from "../assets/Cards/Admin.png";
 import ClumsyChats from "../assets/Cards/ClumsyChats.png";
-import Youtube from "../assets/Cards/Youtube.jpeg";
+
 
 export const Projects = [
   {
-    image: <img src={StudyNotion} alt="StudyNotion " className="object-cover w-full h-full" />,
-    name: "StudyNotion",
+    image: <img src={Interview} alt="Interview " className="object-cover w-full h-full" />,
+    name: "ClumsyInterviews",
     techStack: [
-      "Express",
-      "Node",
-      "ReactJs",
+      "NextJs",
+      "Google Gemini AI",
+      "My SQL",
       "Tailwind CSS",
-      "MongoDB",
-      "Razorpay",
-      "Cloudinary",
+      "Clerk"
     ],
-    gitHub:"https://github.com/BOSON-18/StudyNotion-Mega.git"
+    gitHub:"https://github.com/BOSON-18/clumsyinterviews-next"
   },
   {
-    image: <img src={Youtube} alt="StudyNotion " className="object-cover w-full h-full" />,
-    name: "YouTube Clone",
-    techStack: ["ReactJs", "Tailwind Css", "Redux", "Google-API'S"],
-    gitHub:"https://github.com/BOSON-18/namsate-youtube.git"
+    image: <img src={Reader} alt="Reader " className="object-cover w-full h-full" />,
+    name: "ClumsyReader",
+    techStack: ["Nextjs", "Langchain", "PineCone Embeddings", "Google Gemini AI", "Firebase", "Vercel Blob Storage"],
+    gitHub:"https://github.com/BOSON-18/ClumsyReader"
   },
   {
     image: <img src={ClumsyChats} alt="ClumyChats " className="object-cover w-full h-full" />,
